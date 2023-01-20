@@ -39,7 +39,7 @@ time.sleep(1)
 browser.find_element(By.CSS_SELECTOR,"input#password").send_keys("") # isi password
 time.sleep(1)
 browser.find_element(By.ID,"signin_login").click() # klik tombol sign in
-time.sleep(4)
+time.sleep(3)
 response_data = browser.find_element(By.ID,"swal2-title").text
 response_message = browser.find_element(By.ID,"swal2-content").text
 driver.assertIn('tidak valid', response_data)
